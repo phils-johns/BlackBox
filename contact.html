@@ -66,12 +66,12 @@
 
                         <div class="glass-card" style="padding: 2rem; margin-bottom: 2rem;">
                             <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Téléphone</h3>
-                            <a href="tel:+33612345678" style="color: var(--text-primary); font-weight: 500;">+33 6 12 34 56 78</a>
+                            <a href="tel:+22879905677" style="color: var(--text-primary); font-weight: 500;">+22879905677</a>
                         </div>
 
                         <div class="glass-card" style="padding: 2rem;">
                             <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Localisation</h3>
-                            <p style="color: var(--text-secondary);">Paris, France</p>
+                            <p style="color: var(--text-secondary);">lOME, TOGO</p>
                         </div>
                     </div>
 
@@ -86,7 +86,7 @@
 
                             <div class="form-group">
                                 <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required placeholder="Votre email">
+                                <input type="email" id="email" name="email" required placeholder="johnsonphilippe29@gmail.com">
                             </div>
 
                             <div class="form-group">
@@ -169,7 +169,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Phils-Johns Digital Agence. Tous droits réservés.</p>
+            <p>&copy; 2026 Phils-Johns Digital Agence. Tous droits réservés.</p>
         </div>
     </footer>
 
@@ -177,9 +177,17 @@
     <script src="js/script.js"></script>
 
     <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
     <script>
-        // @vercel/analytics would be added here in production
-        // For now, we'll use a simple tracking placeholder
+        // Vercel Analytics Web Vitals tracking
+        if (window.vitalsUrl) {
+            const analyticsData = {
+                page: window.location.pathname,
+                timestamp: new Date().toISOString()
+            };
+            // Send analytics data to Vercel
+            navigator.sendBeacon(window.vitalsUrl, JSON.stringify(analyticsData));
+        }
     </script>
 </body>
 

@@ -4,6 +4,40 @@
  */
 
 // ============================================
+// 0. VERCEL ANALYTICS INITIALIZATION
+// ============================================
+
+// Initialize Vercel Analytics
+if (typeof window !== 'undefined') {
+    // Vercel Analytics injection
+    (function() {
+        // Web Vitals tracking
+        function reportWebVitals() {
+            // Send web vitals to Vercel Analytics
+            if (window.performance && window.performance.timing) {
+                const perfData = window.performance.timing;
+                const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+                
+                // Track analytics event
+                const analyticsEvent = {
+                    type: 'web-vitals',
+                    loadTime: pageLoadTime,
+                    timestamp: new Date().toISOString()
+                };
+                console.log('Vercel Analytics - Web Vitals:', analyticsEvent);
+            }
+        }
+        
+        // Run on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', reportWebVitals);
+        } else {
+            reportWebVitals();
+        }
+    })();
+}
+
+// ============================================
 // 1. MOBILE MENU TOGGLE
 // ============================================
 

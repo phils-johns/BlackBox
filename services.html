@@ -216,6 +216,20 @@
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
+
+    <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script>
+        // Vercel Analytics Web Vitals tracking
+        if (window.vitalsUrl) {
+            const analyticsData = {
+                page: window.location.pathname,
+                timestamp: new Date().toISOString()
+            };
+            // Send analytics data to Vercel
+            navigator.sendBeacon(window.vitalsUrl, JSON.stringify(analyticsData));
+        }
+    </script>
 </body>
 
 </html>
