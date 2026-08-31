@@ -118,9 +118,7 @@ const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', async(e) => {
-        e.preventDefault();
-
-        // Get form data
+        // Get form data before submission
         const formData = new FormData(contactForm);
         const data = {
             name: formData.get('name'),
@@ -130,14 +128,21 @@ if (contactForm) {
             timestamp: new Date().toISOString()
         };
 
-        // Log to console (in production, send to backend)
+        // Log to console for tracking
         console.log('Contact Form Submission:', data);
 
-        // Show success message
-        showSuccessMessage(contactForm);
+        // Track analytics event
+        const analyticsEvent = {
+            type: 'form-submission',
+            page: window.location.pathname,
+            timestamp: data.timestamp
+        };
+        console.log('Analytics:', analyticsEvent);
 
-        // Reset form
-        contactForm.reset();
+        // Show success message after a brief delay
+        setTimeout(() => {
+            showSuccessMessage(contactForm);
+        }, 500);
     });
 }
 
