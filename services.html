@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services de graphisme professionnel - Phils-Johns Digital Agence">
+    <title>Services - Phils-Johns Digital Agence</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Top bar: logo + theme toggle -->
+    <header class="top-bar">
+        <div class="logo">Phils-Johns</div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème">🌙</button>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Hero -->
+        <section class="hero" style="min-height: 60vh; padding: 100px 2rem 4rem;">
+            <div class="hero-content">
+                <h1>Nos Services de Graphisme</h1>
+                <p class="hero-subtitle">
+                    Design créatif et sophistiqué pour donner vie à votre identité visuelle unique
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section id="design">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Prestations Graphiques</h2>
+            <div class="cards-grid">
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">🎯 Identité Visuelle</h3>
+                    <p class="card-description">
+                        Création d'une identité de marque complète et cohérente : logo, palette de couleurs, typographies, guidelines et tous les éléments qui définissent votre présence visuelle.
+                    </p>
+                </div>
+
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">🖼️ Illustration</h3>
+                    <p class="card-description">
+                        Illustrations originales et personnalisées pour vos projets. De l'illustration vectorielle épurée aux concepts plus élaborés, adaptés à votre style et vos besoins.
+                    </p>
+                </div>
+
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">📱 Design Digital</h3>
+                    <p class="card-description">
+                        Design d'interface pour sites web, applications mobiles et projets digitaux. UX/UI moderne, minimaliste et hautement fonctionnelle.
+                    </p>
+                </div>
+
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">📊 Design Print</h3>
+                    <p class="card-description">
+                        Création de supports imprimés professionnels : cartes de visite, brochures, affiches, flyers et tous vos besoins de communication papier.
+                    </p>
+                </div>
+
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">📸 Retouche Photo</h3>
+                    <p class="card-description">
+                        Retouche et optimisation de vos photographies. Correction couleur, amélioration, montage et créations composites pour vos visuels.
+                    </p>
+                </div>
+
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">✨ Branding Complet</h3>
+                    <p class="card-description">
+                        Accompagnement complet de votre marque : stratégie visuelle, création d'assets, guidelines et mise en place de votre identité globale.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" style="padding: 4rem 2rem;">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Portfolio</h2>
+            <div class="cards-grid">
+                <div class="glass-card card fade-in">
+                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #00d9ff, #ff006e); border-radius: 12px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 3rem;">🎨</span>
+                    </div>
+                    <h3 class="card-title">Projet Premium</h3>
+                    <p class="card-description">Identité visuelle complète pour startup tech</p>
+                </div>
+
+                <div class="glass-card card fade-in">
+                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #ff006e, #00d9ff); border-radius: 12px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 3rem;">🌟</span>
+                    </div>
+                    <h3 class="card-title">Branding Lifestyle</h3>
+                    <p class="card-description">Suite de design pour brand de mode premium</p>
+                </div>
+
+                <div class="glass-card card fade-in">
+                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #00d9ff, #ff006e); border-radius: 12px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 3rem;">💎</span>
+                    </div>
+                    <h3 class="card-title">Design Web</h3>
+                    <p class="card-description">Interface utilisateur pour plateforme e-commerce</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tarification Section -->
+        <section id="tarifs" style="padding: 4rem 2rem;">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Tarification</h2>
+            <div class="cards-grid">
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Pack Essentiel</h3>
+                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #00d9ff, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 1rem 0;">
+                        À partir de 10 000FCFA
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 2rem; color: var(--text-secondary);">
+                        <li style="padding: 0.5rem 0;">✓ Logo + Palette couleurs</li>
+                        <li style="padding: 0.5rem 0;">✓ 3 révisions incluses</li>
+                        <li style="padding: 0.5rem 0;">✓ Livraison en 7 jours</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Demander un Devis</a>
+                </div>
+
+                <div class="glass-card card fade-in" style="border-color: var(--accent-primary); box-shadow: 0 0 30px rgba(0, 217, 255, 0.2);">
+                    <h3 class="card-title">Pack Professionnel</h3>
+                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #00d9ff, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 1rem 0;">
+                        À partir de 35 900FCFA
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 2rem; color: var(--text-secondary);">
+                        <li style="padding: 0.5rem 0;">✓ Identité complète</li>
+                        <li style="padding: 0.5rem 0;">✓ 6 révisions incluses</li>
+                        <li style="padding: 0.5rem 0;">✓ Guidelines détaillées</li>
+                        <li style="padding: 0.5rem 0;">✓ Support prioritaire</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center;">Demander un Devis</a>
+                </div>
+
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Pack Sur-Mesure</h3>
+                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #00d9ff, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 1rem 0;">
+                        Sur Demande
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 2rem; color: var(--text-secondary);">
+                        <li style="padding: 0.5rem 0;">✓ Projet personnalisé</li>
+                        <li style="padding: 0.5rem 0;">✓ Révisions illimitées</li>
+                        <li style="padding: 0.5rem 0;">✓ Accompagnement complet</li>
+                        <li style="padding: 0.5rem 0;">✓ Relation long terme</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Contactez-Nous</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="text-align: center; padding: 6rem 2rem; background: rgba(0, 217, 255, 0.05); border-radius: 24px; margin: 0 2rem;">
+            <h2>Prêt à Transformer Votre Vision ?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
+                Contactez-nous pour discuter de votre projet et obtenir un devis personnalisé.
+            </p>
+            <a href="contact.html" class="btn btn-primary">Demander un Devis</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Phils-Johns</h3>
+                <p>Digital Agence - Graphisme & E-Commerce</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="apropos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="#design">Design Graphique</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#tarifs">Tarification</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Phils-Johns Digital Agence. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

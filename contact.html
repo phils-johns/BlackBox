@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez-nous - Phils-Johns Digital Agence">
+    <title>Contact - Phils-Johns Digital Agence</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Top bar: logo + theme toggle -->
+    <header class="top-bar">
+        <div class="logo">Phils-Johns</div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème">🌙</button>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Hero -->
+        <section class="hero" style="min-height: 60vh; padding: 100px 2rem 4rem;">
+            <div class="hero-content">
+                <h1>Nous Contacter</h1>
+                <p class="hero-subtitle">
+                    Discutez de votre projet avec notre équipe créative. Nous sommes à votre écoute pour transformer votre vision.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+                    <!-- Contact Info -->
+                    <div>
+                        <h2 style="margin-bottom: 2rem;">Informations</h2>
+                        <div class="glass-card" style="padding: 2rem; margin-bottom: 2rem;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Email</h3>
+                            <a href="mailto:contact@phils-johns.com" style="color: var(--text-primary); font-weight: 500;">contact@phils-johns.com</a>
+                        </div>
+
+                        <div class="glass-card" style="padding: 2rem; margin-bottom: 2rem;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Téléphone</h3>
+                            <a href="tel:+33612345678" style="color: var(--text-primary); font-weight: 500;">+33 6 12 34 56 78</a>
+                        </div>
+
+                        <div class="glass-card" style="padding: 2rem;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Localisation</h3>
+                            <p style="color: var(--text-secondary);">Paris, France</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 style="margin-bottom: 2rem;">Envoyez-Nous un Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nom Complet *</label>
+                                <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="Votre email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Sujet du message">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Votre message..." style="min-height: 150px;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn" style="margin-top: 2rem;">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="background: rgba(0, 217, 255, 0.03); border-radius: 24px; padding: 4rem 2rem; margin: 4rem 2rem;">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Questions Fréquentes</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="glass-card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Quels sont les délais de livraison pour les projets graphiques ?</h3>
+                    <p style="color: var(--text-secondary);">Les délais varient selon la complexité du projet. Pour le pack Essentiel : 10 jours. Pour le pack Professionnel : 15-20 jours. Les délais du pack Sur-mesure sont discutés lors de la première consultation.</p>
+                </div>
+
+                <div class="glass-card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Combien de révisions sont incluses ?</h3>
+                    <p style="color: var(--text-secondary);">Le pack Essentiel inclut 3 révisions, le pack Professionnel inclut 6 révisions, et le pack Sur-mesure propose des révisions illimitées pour garantir votre satisfaction.</p>
+                </div>
+
+                <div class="glass-card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Livrez-vous à l'international pour la boutique ?</h3>
+                    <p style="color: var(--text-secondary);">Oui ! Nos produits sont expédiés en France et en Europe. Les délais et frais de livraison varient selon le pays de destination. Consultez les détails lors de votre commande.</p>
+                </div>
+
+                <div class="glass-card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Puis-je payer en plusieurs fois ?</h3>
+                    <p style="color: var(--text-secondary);">Pour les projets graphiques importants, nous pouvons discuter d'un paiement en plusieurs versements (acompte à la signature, solde à la livraison). Contactez-nous pour en discuter.</p>
+                </div>
+
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Comment fonctionne le support après livraison ?</h3>
+                    <p style="color: var(--text-secondary);">Tous nos packs incluent une période de support. Le pack Professionnel offre un support prioritaire pendant 1 mois. Le pack Sur-mesure inclut une relation long terme avec support continu.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section style="text-align: center; padding: 6rem 2rem;">
+            <h2>Impatient de Démarrer ?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
+                Remplissez le formulaire ou envoyez-nous un email. Nous reviendrons vers vous dans les 24 heures !
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Phils-Johns</h3>
+                <p>Digital Agence - Graphisme & E-Commerce</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="apropos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Légal</h3>
+                <a href="#">Conditions d'Utilisation</a>
+                <a href="#">Politique de Confidentialité</a>
+                <a href="#">Mentions Légales</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Phils-Johns Digital Agence. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+
+    <!-- Vercel Analytics -->
+    <script>
+        // @vercel/analytics would be added here in production
+        // For now, we'll use a simple tracking placeholder
+    </script>
+</body>
+
+</html>
