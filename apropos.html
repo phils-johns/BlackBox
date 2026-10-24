@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="À propos de Phils-Johns Digital Agence">
-    <title>À Propos - Phils-Johns Digital Agence</title>
+    <meta name="description" content="Informations et contact - Phils-Johns Digital Agence">
+    <title>Info - Phils-Johns Digital Agence</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/liquid-glass.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -26,12 +26,10 @@
     <nav>
         <div class="nav-container">
             <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="boutique.html">Boutique</a></li>
-                <li><a href="etagere.html">L'Étagère</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="boutique.html">SHOP</a></li>
+                <li><a href="apropos.html">INFO</a></li>
+                <li><a href="services.html">SERVICES</a></li>
             </ul>
             <button class="hamburger" id="hamburger">
         <span></span>
@@ -159,7 +157,77 @@
             <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
                 Discutons de votre projet et découvrez comment nous pouvons vous aider à réussir.
             </p>
-            <a href="contact.html" class="btn btn-primary">Contactez-Nous</a>
+            <a href="#contact" class="btn btn-primary">Contactez-Nous</a>
+        </section>
+
+        <section id="contact">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+                    <div>
+                        <h2 style="margin-bottom: 2rem;">Nous contacter</h2>
+                        <div class="glass-card" style="padding: 2rem; margin-bottom: 2rem;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Email</h3>
+                            <a href="mailto:johnsonphilippe29@gmail.com" style="color: var(--text-primary); font-weight: 500;">johnsonphilippe29@gmail.com</a>
+                        </div>
+                        <div class="glass-card" style="padding: 2rem; margin-bottom: 2rem;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Téléphone</h3>
+                            <a href="tel:+22879905677" style="color: var(--text-primary); font-weight: 500;">+22879905677</a>
+                        </div>
+                        <div class="glass-card" style="padding: 2rem;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">Localisation</h3>
+                            <p style="color: var(--text-secondary);">Lomé-TOGO</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="margin-bottom: 2rem;">Envoyez-nous un message</h2>
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mgaeobeb" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="johnsonphilippe29@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Sujet du message">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Votre message..." style="min-height: 150px;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn" style="margin-top: 2rem;">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: rgba(0, 217, 255, 0.03); border-radius: 24px; padding: 4rem 2rem; margin: 4rem 2rem;">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Questions fréquentes</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="glass-card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Quels sont les délais de livraison pour les projets graphiques ?</h3>
+                    <p style="color: var(--text-secondary);">Les délais varient selon la complexité du projet. Pour le pack Essentiel : 10 jours. Pour le pack Professionnel : 15-20 jours. Les délais du pack Sur-mesure sont discutés lors de la première consultation.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Combien de révisions sont incluses ?</h3>
+                    <p style="color: var(--text-secondary);">Le pack Essentiel inclut 3 révisions, le pack Professionnel inclut 6 révisions, et le pack Sur-mesure propose des révisions illimitées.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Livrez-vous à l'international pour la boutique ?</h3>
+                    <p style="color: var(--text-secondary);">Oui, nos produits sont expédiés en France et en Europe. Les délais et frais varient selon le pays de destination.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Puis-je payer en plusieurs fois ?</h3>
+                    <p style="color: var(--text-secondary);">Pour les projets graphiques importants, nous pouvons discuter d'un paiement en plusieurs versements. Contactez-nous pour en discuter.</p>
+                </div>
+                <div class="glass-card" style="padding: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent-primary);">Comment fonctionne le support après livraison ?</h3>
+                    <p style="color: var(--text-secondary);">Tous nos packs incluent une période de support. Le pack Professionnel offre un support prioritaire pendant 1 mois et le pack Sur-mesure un accompagnement continu.</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -172,16 +240,14 @@
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
-                <a href="index.html">Accueil</a>
-                <a href="services.html">Services</a>
-                <a href="boutique.html">Boutique</a>
-                <a href="etagere.html">L'Étagère</a>
-                <a href="apropos.html">À propos</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html">HOME</a>
+                <a href="boutique.html">SHOP</a>
+                <a href="apropos.html">INFO</a>
+                <a href="services.html">SERVICES</a>
             </div>
             <div class="footer-section">
                 <h3>Support</h3>
-                <a href="contact.html">Nous Contacter</a>
+                <a href="apropos.html#contact">Nous Contacter</a>
                 <a href="#">Conditions</a>
                 <a href="#">Confidentialité</a>
             </div>
@@ -192,7 +258,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/liquid-glass.js" defer></script>
+    <script src="js/script.js"></script>
 
     <!-- Vercel Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>
