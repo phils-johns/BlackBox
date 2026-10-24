@@ -791,42 +791,36 @@ footer {
     /* Ensure dock stays at bottom and only contains nav controls */
     nav {
         bottom: 14px;
-        padding: 8px 14px;
+        width: calc(100% - 24px);
+        padding: 8px 10px;
     }
-    /* Theme toggle sits inside dock alongside hamburger */
     .nav-container {
-        gap: 0.5rem;
+        gap: 0;
         align-items: center;
     }
-    /* Mobile menu appears as a floating panel above the dock */
     .nav-links {
-        display: none;
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: calc(24px + 72px);
-        /* dock bottom (24px) + dock height approx */
-        width: calc(100% - 48px);
-        max-width: 680px;
-        flex-direction: column;
-        background: rgba(10, 10, 10, 0.95);
-        backdrop-filter: blur(20px);
-        border: 1px solid var(--glass-border);
-        border-radius: 20px;
-        padding: var(--spacing-lg);
-        gap: var(--spacing-md);
-        z-index: 1200;
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    }
-    .nav-links.active {
         display: flex;
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: none;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem;
+        padding: 0;
+        background: transparent;
+        backdrop-filter: none;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        z-index: auto;
     }
     .hamburger {
-        display: flex;
+        display: none;
     }
-    /* Make sure the nav-links panel does not cover the top logo */
-    .nav-links {
-        padding-top: calc( var(--spacing-lg) + 36px);
+    .nav-links a {
+        font-size: 0.8rem;
+        white-space: nowrap;
     }
     section {
         padding: var(--spacing-xl) var(--spacing-md);
