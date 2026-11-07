@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phils-Johns Digital Agence - Graphisme & Dropshipping">
-    <title>Phils-Johns Digital Agence - Graphisme & Dropshipping</title>
+    <meta name="description" content="Phil-Johns Digital, agence créative à Lomé : développement web, branding, graphisme, 3D et marketing digital. Over The Creativity.">
+    <meta property="og:title" content="Phil-Johns Digital | Over The Creativity">
+    <meta property="og:description" content="Une agence digitale à Lomé pour faire grandir vos idées.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#080a0a">
+    <title>Phil-Johns Digital | Over The Creativity</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,29 +17,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Top bar: logo + theme toggle -->
-    <header class="top-bar">
-        <div class="logo">Phils-Johns</div>
-        <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème">🌙</button>
-    </header>
     <!-- Navigation -->
-    <nav>
+    <nav aria-label="Navigation principale">
         <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="boutique.html">SHOP</a></li>
-                <li><a href="apropos.html">INFOS</a></li>
-                <li><a href="services.html">SERVICES</a></li>
+            <a class="nav-brand" href="index.html" aria-label="Phil-Johns Digital, accueil">
+                <span class="nav-brand-text">Phil-Johns Digital<small>Over The Creativity</small></span>
+            </a>
+            <ul class="nav-links site-nav">
+                <li><a href="index.html" aria-current="page">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+            <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -44,57 +44,87 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Graphisme & E-Commerce Premium</h1>
+                <span class="eyebrow">Studio digital créatif · Lomé, Togo</span>
+                <h1>Vos idées méritent d'aller <span class="accent">plus loin.</span></h1>
                 <p class="hero-subtitle">
-                    Agence digitale créative combinant design graphique sophistiqué et boutique dropshipping curatée. Transformez votre vision en réalité avec style.
+                    Du développement web à l'identité de marque, nous concevons des expériences numériques claires, utiles et mémorables.
                 </p>
                 <div class="hero-cta">
-                    <a href="services.html" class="btn btn-primary">Découvrir les Services</a>
-                    <a href="boutique.html" class="btn btn-secondary">Explorer SHOP</a>
+                    <a href="services.html" class="btn btn-primary">Voir nos services</a>
+                    <a href="contact.html" class="btn btn-secondary">Nous contacter</a>
                 </div>
             </div>
         </section>
 
         <!-- Offres Section -->
         <section>
-            <h2 style="text-align: center; margin-bottom: 3rem;">Nos Offres Principales</h2>
+            <span class="eyebrow">Ce que nous faisons</span>
+            <h2>Le digital, de l'idée au lancement.</h2>
             <div class="cards-grid">
                 <!-- Graphisme Card -->
                 <div class="glass-card card">
-                    <h3 class="card-title">🎨 Graphisme</h3>
+                    <h3 class="card-title">Graphisme & branding</h3>
                     <p class="card-description">
-                        Designs exclusifs et sophistiqués pour votre identité visuelle. Logo, branding, illustrations, et tout ce qui donne vie à votre vision créative avec des touches minimalistes et modernes.
+                        Une identité cohérente et des créations visuelles qui donnent une vraie présence à votre marque.
                     </p>
-                    <a href="services.html" class="btn btn-secondary" style="align-self: flex-start;">En savoir plus →</a>
+                    <a href="services.html" class="btn btn-secondary" style="align-self: flex-start;">Découvrir le service</a>
                 </div>
 
                 <!-- Boutique Card -->
                 <div class="glass-card card">
-                    <h3 class="card-title">🛍️ E-Commerce Premium</h3>
+                    <h3 class="card-title">Développement web</h3>
                     <p class="card-description">
-                        Sélection curatée de produits dropshipping de qualité. Vêtements, accessoires, articles lifestyle, tous choisis pour leur design épuré et leur qualité. Livraison rapide et fiable.
+                        Des sites sur mesure, rapides et adaptés aux usages de vos clients sur mobile et ordinateur.
                     </p>
-                    <a href="boutique.html" class="btn btn-secondary" style="align-self: flex-start;">Voir les Produits →</a>
+                    <a href="services.html" class="btn btn-secondary" style="align-self: flex-start;">Découvrir le service</a>
                 </div>
 
                 <!-- Étagère Card -->
                 <div class="glass-card card">
-                    <h3 class="card-title">📚 L'Étagère Digitale</h3>
+                    <h3 class="card-title">Marketing digital</h3>
                     <p class="card-description">
-                        Bibliothèque numérique avec livres et formations digitales pour développer vos compétences. Ressources curatées par des experts, accessibles immédiatement et à vie.
+                        SEO, réseaux sociaux et stratégie de contenu pour développer une présence en ligne durable.
                     </p>
-                    <a href="boutique.html#etagere" class="btn btn-secondary" style="align-self: flex-start;">Explorer →</a>
+                    <a href="services.html" class="btn btn-secondary" style="align-self: flex-start;">Découvrir le service</a>
                 </div>
             </div>
         </section>
 
+        <section data-reveal>
+            <div class="stats-grid" aria-label="Repères de l'agence">
+                <div class="stat-item"><span class="stat-value">Lomé</span><span class="stat-label">Notre base, votre partenaire digital</span></div>
+                <div class="stat-item"><span class="stat-value">360°</span><span class="stat-label">Création, stratégie et accompagnement</span></div>
+                <div class="stat-item"><span class="stat-value">Sur mesure</span><span class="stat-label">Des solutions adaptées à votre projet</span></div>
+            </div>
+        </section>
+
+        <section data-reveal>
+            <span class="eyebrow">Sélection</span>
+            <h2>Des idées qui prennent forme.</h2>
+            <div class="portfolio-grid">
+                <a class="project-card" href="portfolio.html">
+                    <div class="project-art web" role="img" aria-label="Composition graphique représentant un projet web">WEB / 01</div>
+                    <div class="project-info"><h3>Expériences web</h3><p>Sites conçus autour de vos objectifs.</p></div>
+                </a>
+                <a class="project-card" href="portfolio.html">
+                    <div class="project-art graphic" role="img" aria-label="Composition graphique représentant une identité visuelle">BRAND / 02</div>
+                    <div class="project-info"><h3>Identités de marque</h3><p>Des systèmes visuels cohérents et distinctifs.</p></div>
+                </a>
+                <a class="project-card" href="portfolio.html">
+                    <div class="project-art model" role="img" aria-label="Composition graphique représentant la modélisation 3D">3D / 03</div>
+                    <div class="project-info"><h3>Visualisation 3D</h3><p>Des concepts spatiaux lisibles avant réalisation.</p></div>
+                </a>
+            </div>
+            <p style="margin-top: 24px;"><a class="btn btn-secondary" href="portfolio.html">Voir le portfolio</a></p>
+        </section>
+
         <!-- CTA Section -->
         <section style="text-align: center; padding: 6rem 2rem;">
-            <h2>Prêt à Collaborer ?</h2>
+            <h2>Votre prochain projet commence ici.</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
-                Que vous ayez besoin d'un design graphique exceptionnel, de produits premium en dropshipping, ou de ressources pour développer vos compétences digitales, nous sommes là pour vous.
+                Parlons de vos objectifs et trouvons la bonne façon de les concrétiser.
             </p>
-            <a href="apropos.html#contact" class="btn btn-primary">Contactez-Nous</a>
+            <a href="contact.html" class="btn btn-primary">Démarrer une conversation</a>
         </section>
     </main>
 
@@ -102,30 +132,30 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Phils-Johns</h3>
-                <p>Digital Agence - Graphisme & E-Commerce</p>
+                <div class="footer-brand">Phil-Johns Digital</div>
+                <div class="footer-tagline">Over The Creativity</div>
+                <p>Agence digitale basée à Lomé, Togo.</p>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
-                <a href="index.html">HOME</a>
-                <a href="boutique.html">SHOP</a>
-                <a href="apropos.html">INFOS</a>
-                <a href="services.html">SERVICES</a>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
                 <h3>Services</h3>
-                <a href="services.html#design">Design Graphique</a>
-                <a href="services.html#branding">Branding</a>
-                <a href="services.html#tarifs">Tarification</a>
+                <a href="mailto:philjohnspro@gmail.com">Email</a>
+                <a href="https://wa.me/22879905677" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Phils-Johns Digital Agence. Tous droits réservés.</p>
+            <p>&copy; 2026 Phil-Johns Digital. Over The Creativity.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <script src="js/main.js" defer></script>
 
     <!-- Vercel Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>

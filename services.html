@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Services de graphisme professionnel - Phils-Johns Digital Agence">
-    <title>Services - Phils-Johns Digital Agence</title>
+    <meta name="description" content="Découvrez les services Phil-Johns Digital à Lomé : développement web, branding, modélisation 3D, SEO, réseaux sociaux et formations.">
+    <meta property="og:title" content="Services | Phil-Johns Digital">
+    <meta property="og:description" content="Création digitale et accompagnement informatique à Lomé.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#080a0a">
+    <title>Services | Phil-Johns Digital</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,53 +17,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Top bar: logo + theme toggle -->
-    <header class="top-bar">
-        <div class="logo">Phils-Johns</div>
-        <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème">🌙</button>
-    </header>
     <!-- Navigation -->
-    <nav>
+    <nav aria-label="Navigation principale">
         <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="boutique.html">SHOP</a></li>
-                <li><a href="apropos.html">INFOS</a></li>
-                <li><a href="services.html">SERVICES</a></li>
+            <a class="nav-brand" href="index.html" aria-label="Phil-Johns Digital, accueil">
+                <span class="nav-brand-text">Phil-Johns Digital<small>Over The Creativity</small></span>
+            </a>
+            <ul class="nav-links site-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+            <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main>
         <!-- Page Hero -->
-        <section class="hero" style="min-height: 60vh; padding: 100px 2rem 4rem;">
+        <section class="hero">
             <div class="hero-content">
-                <h1>Nos Services Créatifs</h1>
+                <span class="eyebrow">Une équipe, plusieurs expertises</span>
+                <h1>Des solutions digitales <span class="accent">qui avancent.</span></h1>
                 <p class="hero-subtitle">
-                    Graphisme, vidéo et voix off pour donner vie à vos projets et à votre identité.
+                    Nous réunissons création, technologie et stratégie pour accompagner chaque étape de votre projet.
                 </p>
             </div>
         </section>
 
         <!-- Services Grid -->
         <section id="design">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Design & Création Vidéo</h2>
+            <span class="eyebrow">Nos expertises</span>
+            <h2>Un accompagnement de bout en bout.</h2>
             <div class="cards-grid">
                 <div class="glass-card card fade-in">
-                    <h3 class="card-title">🎯 Identité Visuelle</h3>
+                    <h3 class="card-title">Développement web</h3>
+                    <p class="card-description">Sites vitrines et expériences web sur mesure, responsives et conçues autour de vos objectifs.</p>
+                </div>
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Graphisme & branding</h3>
                     <p class="card-description">
                         Création d'une identité de marque complète et cohérente : logo, palette de couleurs, typographies, guidelines et tous les éléments qui définissent votre présence visuelle.
                     </p>
+                </div>
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Modélisation 3D</h3>
+                    <p class="card-description">Visualisation de structures et de projets pour présenter clairement les volumes, matériaux et intentions.</p>
+                </div>
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Marketing digital & SEO</h3>
+                    <p class="card-description">Stratégie de visibilité, optimisation pour les moteurs de recherche et contenus adaptés à votre audience.</p>
+                </div>
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Réseaux sociaux</h3>
+                    <p class="card-description">Planification, création de contenus et gestion quotidienne de vos plateformes sociales.</p>
+                </div>
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Maintenance système</h3>
+                    <p class="card-description">Entretien, mises à jour et assistance pour maintenir vos outils et systèmes informatiques en bon état.</p>
+                </div>
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Formations informatiques</h3>
+                    <p class="card-description">Formations pratiques adaptées à votre niveau pour développer vos compétences numériques.</p>
+                </div>
+                <div class="glass-card card fade-in">
+                    <h3 class="card-title">Produits digitaux</h3>
+                    <p class="card-description">Ressources et contenus numériques autour du développement personnel, du sport et de l’informatique.</p>
                 </div>
 
                 <div class="glass-card card fade-in">
@@ -122,32 +152,25 @@
 
         <!-- Portfolio Section -->
         <section id="portfolio" style="padding: 4rem 2rem;">
-            <h2 style="text-align: center; margin-bottom: 3rem;">Portfolio</h2>
+            <span class="eyebrow">Réalisations</span>
+            <h2>Du concret, du créatif.</h2>
             <div class="cards-grid">
-                <div class="glass-card card fade-in">
-                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #00d9ff, #ff006e); border-radius: 12px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
-                        <span style="font-size: 3rem;">🎨</span>
-                    </div>
-                    <h3 class="card-title">Projet Premium</h3>
-                    <p class="card-description">Identité visuelle complète pour startup tech</p>
-                </div>
+                <a class="project-card" href="portfolio.html">
+                    <div class="project-art graphic" role="img" aria-label="Concept d'identité graphique en ambre">CONCEPT / 01</div>
+                    <div class="project-info"><h3>Identité visuelle</h3><p>Une direction graphique cohérente.</p></div>
+                </a>
 
-                <div class="glass-card card fade-in">
-                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #ff006e, #00d9ff); border-radius: 12px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
-                        <span style="font-size: 3rem;">🌟</span>
-                    </div>
-                    <h3 class="card-title">Branding Lifestyle</h3>
-                    <p class="card-description">Suite de design pour brand de mode premium</p>
-                </div>
+                <a class="project-card" href="portfolio.html">
+                    <div class="project-art branding" role="img" aria-label="Concept de branding en turquoise">BRANDING / 02</div>
+                    <div class="project-info"><h3>Univers de marque</h3><p>Un langage visuel distinctif.</p></div>
+                </a>
 
-                <div class="glass-card card fade-in">
-                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #00d9ff, #ff006e); border-radius: 12px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
-                        <span style="font-size: 3rem;">💎</span>
-                    </div>
-                    <h3 class="card-title">Design Web</h3>
-                    <p class="card-description">Interface utilisateur pour plateforme e-commerce</p>
-                </div>
+                <a class="project-card" href="portfolio.html">
+                    <div class="project-art web" role="img" aria-label="Concept d'interface web contemporaine">WEB / 03</div>
+                    <div class="project-info"><h3>Interface web</h3><p>Un parcours pensé pour les usages réels.</p></div>
+                </a>
             </div>
+            <p style="margin-top: 24px;"><a class="btn btn-secondary" href="portfolio.html">Explorer le portfolio</a></p>
         </section>
 
         <!-- Tarification Section -->
@@ -156,7 +179,7 @@
             <div class="cards-grid">
                 <div class="glass-card card fade-in">
                     <h3 class="card-title">Pack Essentiel</h3>
-                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #00d9ff, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 1rem 0;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--color-amber); margin: 1rem 0;">
                         À partir de 10 000FCFA
                     </div>
                     <ul style="list-style: none; margin-bottom: 2rem; color: var(--text-secondary);">
@@ -167,9 +190,9 @@
                     <a href="https://wa.me/22879905677?text=Bonjour,%20je%20souhaite%20demander%20un%20devis" class="btn btn-secondary" style="width: 100%; text-align: center;" target="_blank">Demander un Devis</a>
                 </div>
 
-                <div class="glass-card card fade-in" style="border-color: var(--accent-primary); box-shadow: 0 0 30px rgba(0, 217, 255, 0.2);">
+                <div class="glass-card card fade-in" style="border-color: var(--color-turquoise);">
                     <h3 class="card-title">Pack Professionnel</h3>
-                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #00d9ff, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 1rem 0;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--color-amber); margin: 1rem 0;">
                         À partir de 35 900FCFA
                     </div>
                     <ul style="list-style: none; margin-bottom: 2rem; color: var(--text-secondary);">
@@ -183,7 +206,7 @@
 
                 <div class="glass-card card fade-in">
                     <h3 class="card-title">Pack Sur-Mesure</h3>
-                    <div style="font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #00d9ff, #ff006e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin: 1rem 0;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--color-amber); margin: 1rem 0;">
                         Sur Demande
                     </div>
                     <ul style="list-style: none; margin-bottom: 2rem; color: var(--text-secondary);">
@@ -198,7 +221,7 @@
         </section>
 
         <!-- CTA Section -->
-        <section style="text-align: center; padding: 6rem 2rem; background: rgba(0, 217, 255, 0.05); border-radius: 24px; margin: 0 2rem;">
+        <section style="text-align: center; padding: 6rem 2rem; background: rgba(0, 191, 165, 0.06); margin: 0 2rem;">
             <h2>Prêt à Transformer Votre Vision ?</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
                 Contactez-nous pour discuter de votre projet et obtenir un devis personnalisé.
@@ -211,30 +234,30 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Phils-Johns</h3>
-                <p>Digital Agence - Graphisme & E-Commerce</p>
+                <div class="footer-brand">Phil-Johns Digital</div>
+                <div class="footer-tagline">Over The Creativity</div>
+                <p>Agence digitale basée à Lomé, Togo.</p>
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
-                <a href="index.html">HOME</a>
-                <a href="boutique.html">SHOP</a>
-                <a href="apropos.html">INFOS</a>
-                <a href="services.html">SERVICES</a>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
                 <h3>Services</h3>
-                <a href="#design">Design Graphique</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#tarifs">Tarification</a>
+                <a href="mailto:philjohnspro@gmail.com">Email</a>
+                <a href="https://wa.me/22879905677" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Phils-Johns Digital Agence. Tous droits réservés.</p>
+            <p>&copy; 2026 Phil-Johns Digital. Over The Creativity.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <script src="js/main.js" defer></script>
 
     <!-- Vercel Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>

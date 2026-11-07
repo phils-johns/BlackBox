@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez les concepts créatifs de Phil-Johns Digital : projets web, graphisme, branding et visualisation 3D à Lomé.">
+    <meta property="og:title" content="Portfolio | Phil-Johns Digital">
+    <meta property="og:description" content="Un aperçu de notre direction créative en web, graphisme, branding et 3D.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#080a0a">
+    <title>Portfolio | Phil-Johns Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav aria-label="Navigation principale">
+        <div class="nav-container">
+            <a class="nav-brand" href="index.html" aria-label="Phil-Johns Digital, accueil">
+                <span class="nav-brand-text">Phil-Johns Digital<small>Over The Creativity</small></span>
+            </a>
+            <ul class="nav-links site-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">Portfolio · Concepts créatifs</span>
+                <h1>Des pistes créatives, <span class="accent">des idées en mouvement.</span></h1>
+                <p class="hero-subtitle">Une sélection de directions visuelles et d’expériences conçues pour illustrer notre approche. Chaque projet réel commence par vos objectifs.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="portfolio-title" data-reveal>
+            <span class="eyebrow">Sélection de concepts</span>
+            <h2 id="portfolio-title">Explorer par discipline.</h2>
+            <div class="filter-list" role="group" aria-label="Filtrer les réalisations par catégorie">
+                <button class="filter-button" type="button" data-filter="all" aria-pressed="true">Tout</button>
+                <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+                <button class="filter-button" type="button" data-filter="graphisme" aria-pressed="false">Graphisme</button>
+                <button class="filter-button" type="button" data-filter="branding" aria-pressed="false">Branding</button>
+                <button class="filter-button" type="button" data-filter="3d" aria-pressed="false">3D</button>
+            </div>
+            <div class="portfolio-grid">
+                <a class="project-card" href="contact.html" data-category="web" aria-label="Concept web Coastline, discuter d’un projet web">
+                    <div class="project-art web" role="img" aria-label="Composition web Coastline en vert profond et ambre">COASTLINE<br><small>WEB / 01</small></div>
+                    <div class="project-info"><h3>Coastline</h3><p>Concept d’expérience web pour une marque locale.</p></div>
+                </a>
+                <a class="project-card" href="contact.html" data-category="graphisme" aria-label="Concept graphique Soleil, discuter d’un projet de graphisme">
+                    <div class="project-art graphic" role="img" aria-label="Affiche conceptuelle soleil en ambre sur fond sombre">SOLEIL<br><small>GRAPHISME / 02</small></div>
+                    <div class="project-info"><h3>Soleil</h3><p>Direction d’affiche autour de la culture et du mouvement.</p></div>
+                </a>
+                <a class="project-card" href="contact.html" data-category="branding" aria-label="Concept de marque Nua, discuter d’un projet de branding">
+                    <div class="project-art branding" role="img" aria-label="Signature typographique Nua en turquoise et blanc">nua<br><small>BRANDING / 03</small></div>
+                    <div class="project-info"><h3>Nua Studio</h3><p>Identité conceptuelle pour un studio de bien-être.</p></div>
+                </a>
+                <a class="project-card" href="contact.html" data-category="3d" aria-label="Concept 3D Patio, discuter d’un projet de modélisation 3D">
+                    <div class="project-art model" role="img" aria-label="Composition géométrique abstraite évoquant un espace architectural en 3D">PATIO<br><small>3D / 04</small></div>
+                    <div class="project-info"><h3>Patio</h3><p>Étude de volumes pour un espace contemporain.</p></div>
+                </a>
+                <a class="project-card" href="contact.html" data-category="web" aria-label="Concept web Atlas, discuter d’un projet web">
+                    <div class="project-art web" role="img" aria-label="Composition éditoriale de site web Atlas">ATLAS<br><small>WEB / 05</small></div>
+                    <div class="project-info"><h3>Atlas</h3><p>Concept de plateforme éditoriale et culturelle.</p></div>
+                </a>
+                <a class="project-card" href="contact.html" data-category="branding" aria-label="Concept de marque Forma, discuter d’un projet de branding">
+                    <div class="project-art graphic" role="img" aria-label="Composition typographique Forma en jaune ambre">FORMA<br><small>BRANDING / 06</small></div>
+                    <div class="project-info"><h3>Forma</h3><p>Territoire visuel conceptuel pour une marque active.</p></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta-band" data-reveal>
+            <div>
+                <h2>Un projet à imaginer ?</h2>
+                <p>Décrivons ensemble l’expérience ou l’identité qui fera avancer votre activité.</p>
+            </div>
+            <a class="btn btn-primary" href="contact.html">Parler de mon projet</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">Phil-Johns Digital</div>
+                <div class="footer-tagline">Over The Creativity</div>
+                <p>Agence digitale basée à Lomé, Togo.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Réseaux & contact</h3>
+                <a href="mailto:philjohnspro@gmail.com">Email</a>
+                <a href="https://wa.me/22879905677" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Phil-Johns Digital. Over The Creativity.</p></div>
+    </footer>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
