@@ -1,0 +1,43 @@
+/* PRO — améliorations non destructives (faible spécificité) */
+:where(html){scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+:where(body){text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+:where(img,video){max-width:100%;height:auto}
+::selection{background:rgba(99,102,241,.25)}
+
+/* Accessibilité */
+:where(a,button,input,textarea,select,[tabindex]):focus-visible{outline:3px solid #6366f1;outline-offset:3px;border-radius:6px}
+.pro-skip{position:absolute;left:-9999px;top:8px;z-index:10001;background:#111;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+.pro-skip:focus{left:8px}
+:where(nav a)[aria-current="page"]{font-weight:700;text-decoration:underline;text-underline-offset:6px}
+
+/* Transitions boutons / cartes */
+:where(a.btn,.btn,button,[class*="btn"],.card,[class*="card"]){transition:transform .25s ease,box-shadow .25s ease,opacity .25s ease}
+:where(a.btn,.btn,button,[class*="btn"]):hover{transform:translateY(-2px)}
+:where(a.btn,.btn,button,[class*="btn"]):active{transform:translateY(0)}
+:where(.card,[class*="card"]):hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.12)}
+
+/* En-tête */
+header.pro-scrolled,nav.pro-scrolled{box-shadow:0 6px 24px rgba(0,0,0,.12);backdrop-filter:saturate(180%) blur(10px);-webkit-backdrop-filter:saturate(180%) blur(10px)}
+header,nav{transition:box-shadow .3s ease,background-color .3s ease}
+
+/* Apparition au scroll (activée uniquement si JS actif) */
+.pro-reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.pro-reveal.pro-in{opacity:1;transform:none}
+
+/* Barre de progression */
+#pro-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#6366f1,#ec4899);z-index:10000;transition:width .1s linear}
+
+/* Retour en haut */
+#pro-top{position:fixed;right:20px;bottom:90px;width:44px;height:44px;border:none;border-radius:50%;background:#111;color:#fff;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;z-index:9998;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+#pro-top.show{opacity:1;pointer-events:auto}
+
+/* WhatsApp */
+#pro-wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;z-index:9999;box-shadow:0 8px 22px rgba(37,211,102,.45);transition:transform .25s ease}
+#pro-wa:hover{transform:scale(1.08)}
+#pro-wa svg{width:30px;height:30px;fill:#fff}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .pro-reveal{opacity:1;transform:none}
+}
+@media print{#pro-wa,#pro-top,#pro-progress{display:none!important}}
